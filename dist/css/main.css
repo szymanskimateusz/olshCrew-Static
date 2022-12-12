@@ -1,0 +1,423 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  background: linear-gradient(to right, rgba(34, 34, 34, 0.2), rgba(17, 17, 17, 0.6), rgba(0, 0, 0, 0.3)), url("../img/olshS.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.home h2 {
+  color: #00d659;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+.home .olshLogoHome {
+  height: 20rem;
+}
+.home .olshLogoHome img {
+  height: 20rem;
+}
+
+.crew {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  color: #fff;
+}
+.crew h2 {
+  color: #00d659;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+.crew .container {
+  width: 70vw;
+  display: flex;
+  flex-flow: row wrap;
+}
+.crew .container .boxShadow {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 1.5rem 0 3rem 0;
+}
+.crew .container .boxShadow .riderBox {
+  height: 30rem;
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-top: 1rem;
+  box-shadow: 0 0 0 2px #00d659, 0 0 0 4px #00a344, 0 0 0 6px #00702f;
+}
+.crew .container .boxShadow .riderBox .riderImage {
+  height: 15rem;
+  width: 14rem;
+}
+.crew .container .boxShadow .riderBox .riderImage img {
+  height: 15rem;
+  width: 14rem;
+  border: #00d659 3px solid;
+}
+.crew .container .boxShadow .riderBox .riderText {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.crew .container .boxShadow .riderBox .riderText h3 {
+  font-size: 1.8rem;
+  color: #00d659;
+  padding: 1rem 1rem 0.2rem 1rem;
+}
+.crew .container .boxShadow .riderBox .riderText h6 {
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+.crew .container .boxShadow .riderBox .riderSocials {
+  width: 15rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.crew .container .boxShadow .riderBox .riderSocials i {
+  font-size: 2rem;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+.crew .container .boxShadow .riderBox .riderSocials i:hover {
+  transition: all 0.5s ease-in-out;
+  color: #00d659;
+  cursor: pointer;
+}
+.crew .container > * {
+  flex: 1 1 30rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.about h2 {
+  color: #00d659;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+.about p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.spots {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.spots h2 {
+  color: #00d659;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.contact h2 {
+  color: #00d659;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+.contact .paragraph {
+  text-align: center;
+}
+.contact .paragraph p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+.contact .paragraph i {
+  font-size: 3rem;
+  padding: 2.3rem 1rem 1rem 0;
+}
+.contact .paragraph #sdIG {
+  padding-left: 4rem;
+}
+.contact .paragraph a {
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.contact .paragraph a:hover {
+  transition: all 0.5s ease-in-out;
+  color: #00d659;
+  cursor: pointer;
+}
+
+.gap-one {
+  background: url("../img/daniel3.png");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40vh;
+  width: 100vw;
+}
+
+.gap-two {
+  background: url("../img/patryk.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40vh;
+  width: 100vw;
+}
+
+.menu-btn {
+  position: fixed;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  box-shadow: 0 0 5px #111;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  box-shadow: 0 0 5px #111;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 28px;
+  height: 3px;
+  box-shadow: 0 0 5px #111;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+  box-shadow: none;
+}
+.menu-btn__burger.open::after {
+  transform: rotate(-45deg) translate(3px, -7px);
+  box-shadow: none;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.nav.open {
+  visibility: visible;
+}
+.nav .menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+  list-style-type: none;
+  padding-right: 1rem;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav.open {
+  transform: translateY(0);
+}
+.nav .menu-nav__item {
+  transform: translateX(100vw);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__item.open {
+  transform: translateX(0);
+}
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: 300;
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__link:hover {
+  color: #00d659;
+}
+.nav .menu-nav__link.active {
+  color: #00d659;
+}
+.nav.scrolled {
+  background-color: #000;
+  border-bottom: 3px solid #00d659;
+  transition: all 0.5s ease-in-out;
+}
+.nav.scrolled .menu-nav {
+  width: 466px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.5s ease-in-out;
+}
+.nav.scrolled .menu-nav__link {
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+  padding: 1.2rem 0;
+}
+.nav.scrolled .menu-nav__link.active {
+  color: #00d659;
+  transition: all 0.5s ease-in-out;
+}
+.nav.scrolled .menu-nav__link:hover {
+  color: #00d659;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-nav__item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+
+.menu-nav__item:nth-child(2) {
+  transition-delay: 0.35s;
+}
+
+.menu-nav__item:nth-child(3) {
+  transition-delay: 0.45s;
+}
+
+.menu-nav__item:nth-child(4) {
+  transition-delay: 0.55s;
+}
+
+@media screen and (min-width: 686px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
+}
+html::-webkit-scrollbar {
+  background: #000;
+  width: 0.6vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 10px;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  font-family: "League Gothic", sans-serif;
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+h2, h3, h4 {
+  font-weight: 400;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#secondary-color {
+  color: #00d659;
+}
+
+.paragraph {
+  width: 70vw;
+}
+
+p, h3, h6 {
+  line-height: 1.5;
+}
+
+footer {
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=main.css.map */

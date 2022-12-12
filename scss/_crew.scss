@@ -1,0 +1,103 @@
+.crew {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: $text-color;
+
+    h2 {
+        color: $secondary-color;
+        font-size: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .container {
+        width: 70vw;
+        display: flex;
+        flex-flow: row wrap;
+
+        .boxShadow {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding: 1.5rem 0 3rem 0;
+            //background: #333;
+
+            .riderBox {
+                //background: #333;
+                height: 30rem;
+                width: 23rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: $text-color;
+                //border: $secondary-color 1px solid;
+                padding-top: 1rem;
+                box-shadow: 
+                    0 0 0 2px $secondary-color,
+                    0 0 0 4px darken($secondary-color, 10%),
+                    0 0 0 6px darken($secondary-color, 20%);
+
+                .riderImage {
+                    height: 15rem;
+                    width: 14rem;
+
+                    img {
+                        height: 15rem;
+                        width: 14rem;
+                        border: $secondary-color 3px solid;
+                    }
+                }
+
+                .riderText {
+                    //background: rgb(126, 62, 62);
+                    width: 15rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    h3 {
+                        font-size: 1.8rem;
+                        color: $secondary-color;
+                        padding: 1rem 1rem 0.2rem 1rem;
+                    }
+
+                    h6 {
+                        font-size: 0.8rem;
+                        font-family: $font-montserrat;
+                    }
+                }
+
+                .riderSocials {
+                    width: 15rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    @include transition-ease;
+
+                    i {
+                        font-size: 2rem;
+                        padding: 0.5rem 1rem 1rem 1rem;
+                    }
+
+                    i:hover {
+                        @include transition-ease;
+                        color: $secondary-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .container > * {
+        flex: 1 1 30rem;
+    }
+}

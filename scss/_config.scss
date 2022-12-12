@@ -1,0 +1,21 @@
+$primary-color: #000;
+$secondary-color: rgb(0, 214, 89);
+$text-color: #fff;
+$font-montserrat: 'Montserrat', sans-serif;
+$font-league-gothic: 'League Gothic', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin media-md {
+    @media screen and (min-width: 686px) {
+        @content;
+    }
+}

@@ -1,0 +1,67 @@
+@import 'config';
+@import 'home';
+@import 'crew';
+@import 'about';
+@import 'spots';
+@import 'contact';
+@import 'gaps';
+@import 'menu';
+@import 'media-md';
+
+html::-webkit-scrollbar {    
+    background: $primary-color;
+    width: 0.6vw;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #222;
+    border-radius: 10px;
+}
+
+body {
+    background: $primary-color;
+    color: $text-color;
+    height: 100vh;
+    width: 100vw;
+    font-family: $font-league-gothic;
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+h2, h3, h4 {
+    font-weight: 400;
+}
+
+a {
+    color: $text-color;
+    text-decoration: none;
+}
+
+#secondary-color {
+    color: $secondary-color;
+}
+
+.paragraph {
+    width: 70vw;
+    //background: #efedff;
+}
+
+p, h3, h6 {
+    line-height: 1.5;
+}
+
+footer {
+    //background-color: darken($secondary-color, 25%);
+    color: lighten($primary-color, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    font-size: 1rem;
+    font-family: $font-montserrat;
+}
